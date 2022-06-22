@@ -55,6 +55,8 @@ packer.startup({
 		-- debug
 		-- vimspector
 		use("puremourning/vimspector")
+		--  pairs
+		use("jiangmiao/auto-pairs")
 	end,
 
 	-- config

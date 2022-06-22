@@ -1,3 +1,34 @@
+# openjdk java
+# openjdk 11
+jdk11=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
+
+# openjdk latest!!!!!
+jdk=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
+
+#默认java11
+export JAVA_HOME=$jdk11
+
+alias jdk11="export JAVA_HOME=$jdk11"
+alias jdk="export JAVA_HOME=$jdk"
+
+
+
+# proxy
+# where proxy
+proxy () {
+  export  https_proxy=http://127.0.0.1:7890 
+  export  http_proxy=http://127.0.0.1:7890 
+  export  all_proxy=socks5://127.0.0.1:7890
+  echo "All Proxy on"
+}
+
+# where noproxy
+noproxy () {
+  unset http_proxy
+  unset https_proxy
+  echo "HTTP Proxy off"
+}
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
