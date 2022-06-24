@@ -80,11 +80,14 @@ pluginKeys.nvimTreeList = {
 	{ key = "c", action = "copy" },
 	{ key = "p", action = "paste" },
 	{ key = "o", action = "system_open" },
+	-- 进入下一级
+	{ key = { "]" }, action = "cd" },
+	-- 进入上一级
+	{ key = { "[" }, action = "dir_up" },
 }
 
 -- bufferline
--- 左右Tab切换
-map("n", "<leader>h", ":BufferLineCyclePrev<CR>", opt)
+-- 左右Tab切换 map("n", "<leader>h", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<leader>l", ":BufferLineCycleNext<CR>", opt)
 -- 关闭
 --"moll/vim-bbye"
@@ -206,4 +209,18 @@ pluginKeys.mapVimspector = function()
 	map("n", "<leader>dk", "<Plug>VimspectorStepOut", opt)
 	map("n", "<leader>dl", "<Plug>VimspectorStepInto", opt)
 end
+-- 代码注释插件
+-- -- see ./lua/plugin-config/comment.lua
+pluginKeys.comment = {
+	-- Normal 模式快捷键
+	toggler = {
+		line = "<leader>cc", -- 行注释
+		block = "<leader>bc", -- 块注释
+	},
+	-- Visual 模式
+	opleader = {
+		line = "<leader>c",
+		bock = "<leader>b",
+	},
+}
 return pluginKeys

@@ -38,6 +38,7 @@ packer.startup({
 		use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
 		use("hrsh7th/cmp-path") -- { name = 'path' }
 		use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
+		use("f3fora/cmp-spell")
 		-- common code fragment
 		use("rafamadriz/friendly-snippets")
 		-- lsp-ui
@@ -57,8 +58,11 @@ packer.startup({
 		use("puremourning/vimspector")
 		--  pairs
 		use("jiangmiao/auto-pairs")
+		--  surround
+		use("tpope/vim-surround")
+		--  comment
+		use("numToStr/Comment.nvim")
 	end,
-
 	-- config
 	config = {
 		display = {

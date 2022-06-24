@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/snuff-red/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/Users/snuff-red/.local/share/nvim/site/pack/packer/start/auto-pairs",
@@ -98,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/snuff-red/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-spell"] = {
+    loaded = true,
+    path = "/Users/snuff-red/.local/share/nvim/site/pack/packer/start/cmp-spell",
+    url = "https://github.com/f3fora/cmp-spell"
   },
   ["cmp-vsnip"] = {
     loaded = true,
@@ -213,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/snuff-red/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/snuff-red/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-vsnip"] = {
     loaded = true,
