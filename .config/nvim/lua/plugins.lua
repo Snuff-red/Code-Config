@@ -57,7 +57,7 @@ packer.startup({
 		-- vimspector
 		use("puremourning/vimspector")
 		--  pairs
-		use("jiangmiao/auto-pairs")
+		use("windwp/nvim-autopairs")
 		--  surround
 		use("tpope/vim-surround")
 		--  comment

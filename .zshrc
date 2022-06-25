@@ -6,7 +6,7 @@ jdk11=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
 jdk=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
 
 #默认java11
-export JAVA_HOME=$jdk11
+export JAVA_HOME=$jdk
 
 alias jdk11="export JAVA_HOME=$jdk11"
 alias jdk="export JAVA_HOME=$jdk"
